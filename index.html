@@ -253,6 +253,9 @@ ol.list li{padding:6px 0; color:var(--muted); font-size:15.3px}
     <a href="#hooks" data-page="hooks">
       <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
       Hooks Library</a>
+    <a href="#visualhooks" data-page="visualhooks">
+      <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>
+      Visual Hooks Bank</a>
     <a href="#higgsfield" data-page="higgsfield">
       <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z"/></svg>
       Higgsfield Playbook</a>
@@ -452,6 +455,29 @@ ol.list li{padding:6px 0; color:var(--muted); font-size:15.3px}
     <span class="count" id="hookCount"></span>
   </div>
   <div id="hookList"></div>
+</section>
+
+<!-- ───────── VISUAL HOOKS BANK ───────── -->
+<section class="page" id="page-visualhooks">
+  <div class="kicker">Toolkit</div>
+  <h2 class="page-title">Visual Hooks — Background Bank</h2>
+  <p class="lede">70 background elements for the first 3 seconds of any video — the <b>Incongruity Overlay</b> technique. Something rare, funny, or chaotic happens in frame while you deliver your normal car-export script. Never look at it, never mention it, never react — the gap between "calm business talk" and the background IS the hook. Zero new scripts needed.</p>
+  <div class="toolbar">
+    <div class="search">
+      <svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+      <input type="search" id="bgSearch" placeholder="Search backgrounds… (e.g. drone, fire, snake, parking)" aria-label="Search background hooks">
+    </div>
+    <div class="filt" id="bgLangFilt" role="group" aria-label="Language">
+      <button class="chip on" data-f="en">EN</button>
+      <button class="chip" data-f="ru">RU</button>
+    </div>
+    <span class="count" id="bgCount"></span>
+  </div>
+  <div id="bgHookList"></div>
+  <div class="callout">
+    <svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
+    <span><b>Rule:</b> rotate categories, don't repeat the same background twice in a row. Always ask permission for animals, fire, water, or other people's businesses — and never compromise your own safety for a shot.</span>
+  </div>
 </section>
 
 <!-- ───────── HIGGSFIELD ───────── -->
@@ -732,6 +758,112 @@ const HOOKS = [
  {c:"warn",en:"Three words in a Korean listing that mean RUN.",ru:"Три слова в корейском объявлении, которые значат БЕГИ."}
 ];
 
+const BG_CATS=[
+ {key:'parking',en:'🅿️ Inside the Car Park / Indoor Garage',ru:'🅿️ Внутри паркинга (закрытая парковка)'},
+ {key:'animals',en:'A. Animals & Pets',ru:'A. Животные'},
+ {key:'food',en:'B. Food & Markets',ru:'B. Еда и рынки'},
+ {key:'performers',en:'C. Performers & Street Acts',ru:'C. Перформеры и уличные артисты'},
+ {key:'urban',en:'D. Urban Korea Spectacles',ru:'D. Городские зрелища Кореи'},
+ {key:'industrial',en:'E. Industrial & Mechanical',ru:'E. Промышленность и механика'},
+ {key:'friends',en:'F. Staged with Friends',ru:'F. Постановка с друзьями'},
+ {key:'elements',en:'G. Water / Fire / Elements',ru:'G. Вода / огонь / стихии'}
+];
+const BG_COLS={
+ en:['Visual (0–3s background)','Where / how','Why it works'],
+ ru:['Что в кадре (0–3с)','Где / как','Почему работает']
+};
+const BG_HOOKS = [
+ {id:'P1',cat:'parking',en:["A car alarm suddenly blares, headlights strobe red/white behind you","Any parked car, remote-triggered","Sudden light + sound burst = jump-scare reflex"],ru:["Машина внезапно включает сигнализацию, фары мигают красным/белым позади тебя","Любая машина, дистанционно","Внезапная вспышка света + звука = рефлекс испуга"]},
+ {id:'P2',cat:'parking',en:["Tire smoke fills the frame from a controlled donut/burnout on an empty level","Empty top level, staged safely, off-hours","Smoke filling the whole frame = dramatic, rare"],ru:["Кадр заполняет дым от шин — контролируемый занос/дрифт на пустом этаже","Пустой верхний этаж, постановка, безопасно, не в час пик","Дым заполняет весь кадр — драматично, редко"]},
+ {id:'P3',cat:'parking',en:["An automated parking turntable slowly rotates a car 360° behind you","Automated parking tower (common in Seoul apartment buildings)","Slow heavy mechanical rotation = mesmerizing"],ru:["Автоматическая платформа-карусель медленно поворачивает машину на 360° позади тебя","Башня автоматического паркинга (часто в жилых комплексах Сеула)","Медленное тяжёлое механическое вращение — завораживает"]},
+ {id:'P4',cat:'parking',en:["A row of EV charging stations with blinking status lights","Underground mall/office parking","Repetitive blinking lights draw the eye"],ru:["Ряд зарядных станций для электромобилей с мигающими индикаторами","Подземный паркинг ТЦ/офиса","Повторяющиеся мигающие огни притягивают взгляд"]},
+ {id:'P5',cat:'parking',en:["A supercar's scissor/butterfly doors open dramatically","Private collector garage / dealership level","Doors opening like wings = rare, \"wow\" silhouette"],ru:["Дверцы суперкара (scissor/butterfly) драматично открываются","Гараж коллекционера / этаж дилера","Двери, открывающиеся как крылья — редкий, «вау»-силуэт"]},
+ {id:'P6',cat:'parking',en:["A group of motorcycles rev in unison, echo amplified by the concrete","Underground garage, bike meet","Sound + visible vibration in a sealed space = visceral"],ru:["Группа мотоциклов синхронно ревёт двигателями, эхо усиливается бетоном","Подземный паркинг, байк-встреча","Звук + видимая вибрация в закрытом пространстве — на грани ощущений"]},
+ {id:'P7',cat:'parking',en:["Underglow neon lights flicker on beneath a parked car in the dark","Modified car, dim garage corner","Sudden colored light in darkness = high contrast"],ru:["Неоновая подсветка днища внезапно загорается под машиной в темноте","Тюнингованная машина, тёмный угол паркинга","Внезапный цветной свет в темноте — высокий контраст"]},
+ {id:'P8',cat:'parking',en:["A tow truck lifts a car at an angle behind you","Any garage, real tow situation","Heavy machinery + scale + tension"],ru:["Эвакуатор поднимает машину под углом позади тебя","Любой паркинг, реальная эвакуация","Тяжёлая техника + масштаб + напряжение"]},
+ {id:'P9',cat:'parking',en:["A sprinkler/fire-suppression test suddenly mists the air","Maintenance day, with permission","Sudden fog/mist = instant atmosphere shift"],ru:["Внезапно срабатывает тест системы пожаротушения — воздух заполняется туманом","День техобслуживания, с разрешения","Внезапный туман — мгновенно меняет атмосферу"]},
+ {id:'P10',cat:'parking',en:["A skateboarder/longboarder glides silently through an empty ramp","Empty top-level ramp","Smooth motion in an otherwise static space"],ru:["Скейтбордист/лонгбордист бесшумно проезжает через пустую рампу","Пустая рампа верхнего уровня","Плавное движение в статичном пространстве"]},
+ {id:'P11',cat:'parking',en:["Sun rays stream through ramp openings, cutting bright bars across the floor","Rooftop-exit ramp at golden hour","Dramatic light/shadow contrast"],ru:["Лучи солнца пробиваются через проёмы рампы, рассекая пол яркими полосами","Выездная рампа на крышу, золотой час","Драматичный контраст света и тени"]},
+ {id:'P12',cat:'parking',en:["A floor-cleaning robot drives slowly across frame","Mall/office building parking","Mundane task done by a robot = quiet novelty"],ru:["Робот-полотёр медленно едет через кадр","Паркинг ТЦ/офисного здания","Обычная задача, выполняемая роботом — тихая новизна"]},
+ {id:'P13',cat:'parking',en:["A basketball bounces somewhere off-frame, echo filling the space","Empty level, staged","Acoustic surprise in a concrete box"],ru:["Где-то за кадром отбивается баскетбольный мяч, эхо заполняет пространство","Пустой этаж, постановка","Акустический сюрприз в бетонной коробке"]},
+ {id:'P14',cat:'parking',en:["A graffiti artist spray-paints a concrete pillar behind you","Designated area, with permission","Color + motion against grey concrete"],ru:["Граффити-художник расписывает бетонную колонну позади тебя","Разрешённая зона, с согласия","Цвет + движение на фоне серого бетона"]},
+ {id:'P15',cat:'parking',en:["An FPV drone zips between the columns behind you","Empty level, your own drone","Fast, erratic, unpredictable motion"],ru:["FPV-дрон проносится между колоннами позади тебя","Пустой этаж, твой собственный дрон","Быстрое, хаотичное, непредсказуемое движение"]},
+ {id:'P16',cat:'parking',en:["A tuned car's blow-off valve hisses with a visible vapor burst","Dealership/meet","Sudden hiss + vapor cloud = sensory jolt"],ru:["У тюнингованной машины со свистом срабатывает блоу-офф клапан с видимым облаком пара","Дилерский центр / встреча","Внезапный свист + облако пара — сенсорный шок"]},
+ {id:'P17',cat:'parking',en:["Valets sprint past with key fobs, shuffling multiple cars","Hotel/mall valet level","Frantic human motion in the background"],ru:["Парковщики бегут с ключами, перегоняя несколько машин","Уровень валет-парковки отеля/ТЦ","Суматошное движение людей на фоне"]},
+ {id:'P18',cat:'parking',en:["A row of supercars sits under dramatic spotlighting","Private collection/showroom level","Wealth + lighting = luxury signal (great for GCC)"],ru:["Ряд суперкаров стоит под драматичной направленной подсветкой","Этаж частной коллекции/шоурума","Богатство + свет = сигнал luxury (отлично для GCC)"]},
+ {id:'P19',cat:'parking',en:["Pigeons trapped inside flap and fly between levels","Older parking structure","Erratic animal motion indoors = unexpected"],ru:["Голуби, оказавшиеся внутри, мечутся между этажами","Старое здание паркинга","Хаотичное движение животного в помещении — неожиданно"]},
+ {id:'P20',cat:'parking',en:["Someone shouts/sings and the echo reverberates dramatically through the structure","Empty level, staged with a friend","Acoustic surprise — the kind people test IRL, very relatable"],ru:["Кто-то кричит/поёт, и эхо драматично разносится по всей конструкции","Пустой этаж, постановка с другом","Акустический сюрприз — то, что люди реально пробуют в жизни, очень узнаваемо"]},
+ {id:'1',cat:'animals',en:["A raccoon or meerkat climbs onto the table/your shoulder","Raccoon/exotic-animal café, Seoul","Rare animal this close to a face = primal attention pull"],ru:["Енот или сурикат залезает на стол/плечо","Кафе с енотами, Сеул","Редкое животное так близко к лицу — мощный триггер внимания"]},
+ {id:'2',cat:'animals',en:["A capybara or sloth slowly waddles across frame behind you","Animal café","Painfully slow movement vs. your fast price-talk = funny contrast"],ru:["Капибара или ленивец медленно бредёт через кадр позади тебя","Кафе с животными","Болезненно медленное движение vs. твой быстрый разговор про цены — смешной контраст"]},
+ {id:'3',cat:'animals',en:["A flock of pigeons suddenly bursts into flight","Any plaza/park, timed","Sudden mass motion — startle reflex"],ru:["Стая голубей резко взлетает","Любая площадь/парк, по таймингу","Внезапное массовое движение — рефлекс испуга"]},
+ {id:'4',cat:'animals',en:["A large iguana or monitor lizard walks past on a leash","Reptile café","Rare + slightly alarming = can't look away"],ru:["Большая игуана или варан проходит на поводке","Кафе с рептилиями","Редко + слегка тревожно = невозможно отвести взгляд"]},
+ {id:'5',cat:'animals',en:["A horse is led down a street or path","Equestrian center / event day","Horses in urban settings are inherently \"wait, what\""],ru:["По улице ведут лошадь","Конный клуб / мероприятие","Лошадь в городской среде — это всегда «стоп, что?»"]},
+ {id:'6',cat:'animals',en:["Dogs run an agility course — jumping hoops/tunnels","Dog park / dog café","Constant motion, cute + chaotic"],ru:["Собаки бегут по полосе препятствий — прыгают через обручи/тоннели","Собачий парк / кафе","Постоянное движение, мило + хаотично"]},
+ {id:'7',cat:'animals',en:["A parrot flies across frame and lands on something","Bird café","Sudden colorful motion"],ru:["Попугай пролетает через кадр и садится","Кафе с птицами","Внезапное цветное движение"]},
+ {id:'8',cat:'animals',en:["Eels or crabs scramble in a tank","Seafood restaurant tank","Rare close-up creature motion, slightly uncomfortable"],ru:["Угри или крабы шевелятся в аквариуме","Аквариум в рыбном ресторане","Редкий крупный план движения существ, слегка неуютно"]},
+ {id:'9',cat:'food',en:["A vendor flips/stretches giant hotteok dough dramatically","Street food stall","Big repetitive motion, satisfying"],ru:["Продавец драматично переворачивает/растягивает тесто хотток","Уличный стенд с едой","Крупное повторяющееся движение, завораживает"]},
+ {id:'10',cat:'food',en:["A dessert gets blasted with a blowtorch (crème brûlée style)","Dessert café","Sudden flame burst = flinch trigger"],ru:["Десерт обжигают горелкой (как крем-брюле)","Кафе-десертная","Внезапная вспышка огня = рефлекс вздрагивания"]},
+ {id:'11',cat:'food',en:["A massive food item (whole roast, giant skewer) is carried past","BBQ restaurant / market","Scale surprise"],ru:["Мимо проносят огромное блюдо (целая туша, гигантский шашлык)","Ресторан барбекю / рынок","Эффект масштаба"]},
+ {id:'12',cat:'food',en:["A cotton-candy machine spins a giant cloud","Market/festival stall","Hypnotic spinning motion"],ru:["Машина для сахарной ваты крутит гигантское облако","Рынок/фестиваль","Гипнотическое вращение"]},
+ {id:'13',cat:'food',en:["A chef flips a wok with flames roaring","Korean-Chinese restaurant kitchen visible from street","Fire + motion combo"],ru:["Повар подбрасывает вок с языками пламени","Кухня корейско-китайского ресторана, видна с улицы","Огонь + движение"]},
+ {id:'14',cat:'food',en:["Giant bubble tea is shaken/poured in slow-mo","Bubble tea shop window","Satisfying liquid motion"],ru:["Гигантский бабл-ти трясут/наливают в слоу-мо","Витрина чайной","Завораживающее движение жидкости"]},
+ {id:'15',cat:'food',en:["A vendor does knife tricks — fast chopping, flipping knives","Market stall","Skill + slight danger = tension"],ru:["Продавец показывает трюки с ножами — быстрая нарезка, подбрасывание","Рыночный прилавок","Мастерство + лёгкая опасность = напряжение"]},
+ {id:'16',cat:'food',en:["Plates zoom past on a conveyor belt","Conveyor-belt sushi spot","Constant background motion, oddly calming contrast"],ru:["Тарелки проносятся по конвейерной ленте","Суши на конвейере","Постоянное фоновое движение, странно успокаивает"]},
+ {id:'17',cat:'performers',en:["A K-pop dance crew runs a viral choreo behind you","Practice room window / busking spot (Hongdae)","Recognizable trend + motion"],ru:["Танцевальная команда K-pop отрабатывает виральную хореографию позади тебя","Окно репетиционной комнаты / уличные выступления (Хондэ)","Узнаваемый тренд + движение"]},
+ {id:'18',cat:'performers',en:["A street magician mid-trick — cards vanish","Busking area","\"Wait, how\" curiosity"],ru:["Уличный фокусник в момент трюка — карты исчезают","Зона уличных артистов","Любопытство «как это»"]},
+ {id:'19',cat:'performers',en:["A \"human statue\" performer suddenly snaps to life and scares someone","Tourist area","Jump-scare comedy"],ru:["«Живая статуя» внезапно оживает и пугает прохожего","Туристическая зона","Комедия испуга"]},
+ {id:'20',cat:'performers',en:["A fire-poi/fire-spinning performer at night","Han River park events","Fire + motion + night = visually loud"],ru:["Файер-перформер крутит пои ночью","Парки у реки Хан, мероприятия","Огонь + движение + ночь = визуально громко"]},
+ {id:'21',cat:'performers',en:["A unicyclist rides past","Hongdae street performers","Rare mode of transport"],ru:["Мимо проезжает человек на моноколесе/одноколёсном велосипеде","Уличные артисты в Хондэ","Редкий вид транспорта"]},
+ {id:'22',cat:'performers',en:["A breakdancer mid-spin/freeze","Busking circle","High-energy motion"],ru:["Брейк-дансер в момент вращения/заморозки","Круг уличных танцоров","Высокоэнергичное движение"]},
+ {id:'23',cat:'performers',en:["A busker plays a weird instrument (saw, theremin, giant gayageum) loudly","Busking area","Unusual sound + visual"],ru:["Музыкант играет на странном инструменте (пила, терменвокс, гигантская каягым) громко","Зона уличных артистов","Необычный звук + визуал"]},
+ {id:'24',cat:'performers',en:["A group of elaborate cosplayers walks past","Convention days (near COEX)","Costume novelty"],ru:["Мимо проходит группа косплееров в сложных костюмах","Дни конвентов (рядом с COEX)","Новизна костюмов"]},
+ {id:'25',cat:'urban',en:["A glass elevator drops fast with the whole city visible behind you","Hotel/mall glass elevator","Vertigo motion, scale"],ru:["Стеклянный лифт быстро падает, весь город виден позади тебя","Стеклянный лифт в отеле/ТЦ","Эффект вертиго, масштаб"]},
+ {id:'26',cat:'urban',en:["Sharks/rays swim overhead through an aquarium tunnel","COEX Aquarium","Rare overhead motion"],ru:["Акулы/скаты проплывают над головой в туннеле аквариума","Аквариум COEX","Редкое движение «над головой»"]},
+ {id:'27',cat:'urban',en:["A giant LED sphere/art installation shifts colors rapidly","Gangnam art installations","Color/light overload"],ru:["Гигантская LED-сфера/арт-объект быстро меняет цвета","Арт-инсталляции в Каннаме","Перегрузка цветом/светом"]},
+ {id:'28',cat:'urban',en:["A drone light show forms shapes in the night sky","Festival nights (Han River)","Rare large-scale visual"],ru:["Дрон-шоу складывает фигуры в ночном небе","Фестивальные ночи (река Хан)","Редкий масштабный визуал"]},
+ {id:'29',cat:'urban',en:["A flash mob suddenly freezes mid-motion","Staged with friends, busy plaza","Pattern break"],ru:["Флэшмоб внезапно замирает на полудвижении","Постановка с друзьями, людная площадь","Разрыв паттерна"]},
+ {id:'30',cat:'urban',en:["A giant mascot costume dances/walks past","Store openings (common in Korea)","Absurd scale + color"],ru:["Мимо проходит/танцует гигантский ростовой костюм-маскот","Открытия магазинов (часто в Корее)","Абсурдный масштаб + цвет"]},
+ {id:'31',cat:'urban',en:["A group of ajummas does synchronized morning exercise in a park","Any park, early morning","Unexpected synchronized motion"],ru:["Группа кореянок-ажумм синхронно делает утреннюю зарядку в парке","Любой парк, раннее утро","Неожиданное синхронное движение"]},
+ {id:'32',cat:'urban',en:["Through a window, someone is mid-scream singing karaoke","Noraebang storefront","Silent-comedy framing"],ru:["Через окно видно, как кто-то надрывается в караоке","Вывеска норебана","Кадр в стиле немой комедии"]},
+ {id:'33',cat:'industrial',en:["A massive shipping container swings on a crane in the distance","Port (Busan/Incheon)","Scale + slow heavy motion — also quietly echoes your real export world"],ru:["Огромный морской контейнер раскачивается на кране на заднем плане","Порт (Пусан/Инчхон)","Масштаб + медленное тяжёлое движение — и незаметно перекликается с твоим реальным миром экспорта"]},
+ {id:'34',cat:'industrial',en:["Sparks shower from an angle grinder, tight framing","Workshop/garage","Bright sudden flash"],ru:["Сноп искр от углошлифовальной машины, крупный план","Мастерская/гараж","Яркая внезапная вспышка"]},
+ {id:'35',cat:'industrial',en:["An ice sculpture gets carved with a chainsaw","Ice festival / hotel event","Noise + shaving motion"],ru:["Ледяную скульптуру вырезают бензопилой","Ледовый фестиваль / отель","Шум + движение стружки"]},
+ {id:'36',cat:'industrial',en:["A wrecking-ball excavator swings in the background","Construction site (safe distance)","Heavy slow-motion menace"],ru:["Экскаватор со шар-бабой раскачивается на фоне","Строительная площадка (безопасное расстояние)","Тяжёлая медленная угроза"]},
+ {id:'37',cat:'industrial',en:["A car wash tunnel engulfs a vehicle in foam and spinning brushes","Car wash","Chaotic motion + color"],ru:["Машина в туннеле автомойки накрывает пена и вращающиеся щётки","Автомойка","Хаотичное движение + цвет"]},
+ {id:'38',cat:'industrial',en:["A wall of washing machines all spins in sync, colorful drums","Laundromat","Hypnotic repetition"],ru:["Стена стиральных машин синхронно вращается, цветные барабаны","Прачечная","Гипнотичная повторяемость"]},
+ {id:'39',cat:'friends',en:["A friend comically \"falls\" into a fountain/pool behind you","Public fountain, staged","Splash + slapstick"],ru:["Друг комично «падает» в фонтан/бассейн позади тебя","Городской фонтан, постановка","Брызги + слэпстик"]},
+ {id:'40',cat:'friends',en:["A mock proposal — someone drops to one knee behind you","Staged, public spot","Crowd reaction + emotion bait"],ru:["Имитация предложения руки и сердца — кто-то падает на колено позади","Постановка, людное место","Реакция толпы + эмоция"]},
+ {id:'41',cat:'friends',en:["Two friends in mascot costumes slow-motion \"fight\"","Staged, costumes rented","Absurdist comedy"],ru:["Два друга в костюмах маскотов дерутся в slow-motion","Постановка, костюмы в аренду","Абсурдистская комедия"]},
+ {id:'42',cat:'friends',en:["A skateboarder attempts and comically wipes out on a trick","Staged, skate park","Physical comedy"],ru:["Скейтбордист пытается выполнить трюк и комично падает","Постановка, скейт-парк","Физическая комедия"]},
+ {id:'43',cat:'friends',en:["A friend sets off a confetti cannon","Staged","Sudden burst of color/motion"],ru:["Друг запускает конфетти-пушку","Постановка","Внезапный взрыв цвета/движения"]},
+ {id:'44',cat:'friends',en:["Friends pretend to be paparazzi, flashing cameras at a \"celebrity\" walking by","Staged","Absurd status play"],ru:["Друзья изображают папарацци, фотовспышки на «звезду», идущую мимо","Постановка","Абсурдная игра со статусом"]},
+ {id:'45',cat:'elements',en:["A massive wave crashes just behind you","Busan beach, timed","Scale + sudden motion"],ru:["Огромная волна разбивается прямо позади тебя","Пляж в Пусане, по таймингу","Масштаб + резкое движение"]},
+ {id:'46',cat:'elements',en:["A fountain show bursts water jets in time with music","Han River fountain shows","Rhythmic bursts"],ru:["Фонтанное шоу бьёт струями воды в такт музыке","Фонтанные шоу на реке Хан","Ритмичные всплески"]},
+ {id:'47',cat:'elements',en:["A neon sign flickers and sparks like it's dying","Any old neon storefront","Glitchy, eerie"],ru:["Неоновая вывеска мигает и искрит, будто умирает","Любая старая неоновая вывеска","Глитчево, тревожно"]},
+ {id:'48',cat:'elements',en:["Steam/fog rolls dramatically across the street","Winter mornings near food stalls/manholes","Atmospheric, mysterious"],ru:["По улице драматично стелется пар/туман","Зимние утра у ларьков с едой/люков","Атмосферно, загадочно"]},
+ {id:'49',cat:'elements',en:["A sudden heavy downpour starts — rain hammering down while you stay dry under cover","Rainy season, under awning","Dramatic weather contrast"],ru:["Внезапно начинается ливень — дождь барабанит, а ты сухой под навесом","Сезон дождей, под навесом","Драматичный контраст погоды"]},
+ {id:'50',cat:'elements',en:["A rooftop fire pit roars with flames at night","Rooftop bar/event","Warm chaos vs. calm delivery"],ru:["На крыше ночью бушует огонь костра","Крыша-бар / мероприятие","Тёплый хаос vs. спокойная подача"]}
+];
+
+function renderBgHooks(){
+  const lang = document.querySelector('#bgLangFilt .chip.on').dataset.f;
+  const q = document.getElementById('bgSearch').value.trim().toLowerCase();
+  let html='', shown=0;
+  BG_CATS.forEach(cat=>{
+    const rows = BG_HOOKS.filter(h=>h.cat===cat.key);
+    const filtered = rows.filter(h=> !q || h[lang].join(' ').toLowerCase().includes(q));
+    if(!filtered.length) return;
+    shown += filtered.length;
+    html += `<h3 class="sec">${cat[lang]}</h3><div class="table-scroll"><table><thead><tr><th>#</th><th>${BG_COLS[lang][0]}</th><th>${BG_COLS[lang][1]}</th><th>${BG_COLS[lang][2]}</th></tr></thead><tbody>`;
+    filtered.forEach(h=>{
+      html += `<tr><td class="num">${h.id}</td><td style="color:var(--text)">${h[lang][0]}</td><td>${h[lang][1]}</td><td>${h[lang][2]}</td></tr>`;
+    });
+    html += `</tbody></table></div>`;
+  });
+  document.getElementById('bgHookList').innerHTML = html || '<p class="note">No background hooks match. Try another word.</p>';
+  document.getElementById('bgCount').textContent = `${shown} of ${BG_HOOKS.length}`;
+}
+
 /* ════════ RENDER ════════ */
 const pBadge = p => `<span class="badge b-${p.toLowerCase()}">${p}</span>`;
 const mBadge = m => `<span class="badge b-${m.toLowerCase()}">${m}</span>`;
@@ -803,6 +935,12 @@ document.getElementById('hookFilt').addEventListener('click',e=>{
   b.classList.add('on'); renderHooks();
 });
 document.getElementById('hookSearch').addEventListener('input',renderHooks);
+document.getElementById('bgLangFilt').addEventListener('click',e=>{
+  const b=e.target.closest('.chip'); if(!b)return;
+  document.querySelectorAll('#bgLangFilt .chip').forEach(c=>c.classList.remove('on'));
+  b.classList.add('on'); renderBgHooks();
+});
+document.getElementById('bgSearch').addEventListener('input',renderBgHooks);
 
 /* copy */
 let toastT;
@@ -829,7 +967,7 @@ document.querySelectorAll('.checklist').forEach(ul=>{
 });
 
 /* routing */
-const PAGES=['overview','week1','ideas','hooks','higgsfield','automation'];
+const PAGES=['overview','week1','ideas','hooks','visualhooks','higgsfield','automation'];
 function show(page){
   if(!PAGES.includes(page))page='overview';
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('visible'));
@@ -846,7 +984,7 @@ document.getElementById('menuBtn').addEventListener('click',()=>{sb.classList.ad
 scrim.addEventListener('click',closeSide);
 
 /* init */
-renderIdeas('all'); renderHooks(); show(location.hash.slice(1)||'overview');
+renderIdeas('all'); renderHooks(); renderBgHooks(); show(location.hash.slice(1)||'overview');
 </script>
 </body>
 </html>
