@@ -249,6 +249,9 @@ ol.list li{padding:6px 0; color:var(--muted); font-size:15.3px}
     <a href="#week2" data-page="week2">
       <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/></svg>
       Week 2 — Exact Plan</a>
+    <a href="#week3" data-page="week3">
+      <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/></svg>
+      Week 3 — Saudi Focus</a>
     <a href="#ideas" data-page="ideas">
       <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>
       30 Video Ideas</a>
@@ -470,6 +473,18 @@ ol.list li{padding:6px 0; color:var(--muted); font-size:15.3px}
   <div class="callout">
     <svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/></svg>
     <span><b>Rule of Week 2:</b> consistency IS the content. A kept promise (Part 2 on time) and a recurring format (Car of the Week, same day weekly) build more trust in 7 days than any single viral hit.</span>
+  </div>
+</section>
+
+<!-- ───────── WEEK 3 (IN PROGRESS) ───────── -->
+<section class="page" id="page-week3">
+  <div class="kicker">Week 3 — In Progress</div>
+  <h2 class="page-title">Saudi focus.<br>Talking-head scripts, locked.</h2>
+  <p class="lede">Audience pivot this week: primary focus shifts to <b>Saudi Arabia</b>. These 4 voice-mode scripts are approved and ready to film — full text only, no camera or action notes (shot composition is your call on location).</p>
+  <div id="week3List"></div>
+  <div class="callout gold">
+    <svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.354 4.354m-1.745 1.437l1.745-1.437m6.612 6.612a3 3 0 11-4.243-4.243l4.243 4.243z"/></svg>
+    <span><b>Still needed:</b> 2–3 music-mode videos + a batch-day shot list + day-by-day posting schedule to complete Week 3 — same structure as Week 1 and Week 2. See <code>WEEK_3_PLAN.md</code>.</span>
   </div>
 </section>
 
@@ -816,6 +831,29 @@ const SCRIPTS2 = [
   pinned:"Which step do you have the most questions about? Ask below 👇"}
 ];
 
+const WEEK3_SCRIPTS = [
+ {title:"Price Walk — Mercedes E300 2025 (Saudi Arabia)", pillar:"P1", mode:"Voice", len:"~20s",
+  en:"Take a look at this. A twenty twenty-five Mercedes E300, listed right now for [SAR XXX,XXX] inside Saudi Arabia. Identical spec, identical mileage — but here's what it's actually selling for in Seoul. [PRICE REVEAL]. Add shipping, add customs — the gap is still massive. This is the exact number your dealer never shows you. Drop your city below and I'll find yours.",
+  ru:"«Смотри сюда. Mercedes E300 двадцать двадцать пятого года, сейчас выставлен за [SAR XXX,XXX] в Саудовской Аравии. Та же комплектация, тот же пробег — а вот сколько он на самом деле стоит в Сеуле. [ЦЕНА]. Добавь доставку, добавь растаможку — разница всё равно огромная. Это именно та цифра, которую твой дилер никогда не покажет. Напиши свой город внизу — найду такую же для тебя.»",
+  caption:"Same Mercedes E300, two different worlds. Comment your city — I'll find this gap for you too. 🇰🇷",
+  pinned:"Drop your city below — I'll run the real numbers for your market 👇"},
+ {title:"The Report Walk", pillar:"P2", mode:"Voice", len:"~25s",
+  en:"Stop — before you buy any car from Korea, ask for this one report first. This is something every car I sell comes with — an official Korean inspection report, government-verified, covering accident history, repairs, and past owners. I personally go and inspect the actual car too, before any client sends a single riyal. But here's my honest advice, no matter who you buy from: always ask for this report first. A report protects you. A promise doesn't.",
+  ru:"«Стоп — перед тем как купить машину из Кореи, сначала попроси этот отчёт. Это есть у каждой машины, которую я продаю — официальный корейский отчёт осмотра, проверенный государством, с историей аварий, ремонтов и предыдущих владельцев. Я также лично приезжаю и осматриваю саму машину, перед тем как клиент отправит хоть один риял. Но вот мой честный совет, у кого бы ты ни покупал: всегда проси этот отчёт первым. Отчёт защищает. Обещание — нет.»",
+  caption:"One report. Real protection. Ask for it before you pay anyone, anywhere. 🔒",
+  pinned:"Buying from Korea? Comment and I'll tell you exactly what to check 👇"},
+ {title:"Myth-Busting Walk", pillar:"P2", mode:"Voice", len:"~35s",
+  en:"Is it actually risky to buy a car from Korea? I won't lie to you — yes, if you don't know what you're doing. Some sellers crop the auction photo so you never see the real grade. Others list a flood-damaged car under a clean title and hope nobody checks the report. I've personally walked away from cars that looked perfect on camera but failed on paper. That's exactly why I never send a client's money before I've pulled the official report myself and inspected the car in person — no exceptions, no shortcuts. If you're thinking about importing from Korea, ask me anything. I'll tell you exactly what to look for, for free.",
+  ru:"«Действительно ли рискованно покупать машину из Кореи? Не буду врать — да, если ты не знаешь, что делаешь. Некоторые продавцы обрезают фото с аукциона, чтобы ты не увидел настоящую оценку. Другие выставляют машину после потопа под чистым титулом и надеются, что никто не проверит отчёт. Я лично отказывался от машин, которые выглядели идеально на камеру, но не проходили проверку по документам. Именно поэтому я никогда не отправляю деньги клиента, пока сам не подниму официальный отчёт и не осмотрю машину лично — без исключений, без сокращений. Если думаешь об импорте из Кореи — спрашивай что угодно, я бесплатно расскажу, на что смотреть.»",
+  caption:"Yes, you can get scammed buying from Korea — if you don't know this. Here's how I make it impossible. 🛡️",
+  pinned:"Ask me anything about importing from Korea — I answer everything 👇"},
+ {title:"The Low-Mileage Secret", pillar:"P2", mode:"Voice", len:"~20s",
+  en:"Here's something that surprises every new client. A five-year-old car in Korea can have less mileage than a one-year-old car in Saudi. Why? Public transport here is so efficient that most people barely drive on weekdays — the car sits in a garage from Monday to Friday. That's the real reason Korean used cars look almost new, even years later.",
+  ru:"«Вот что удивляет каждого нового клиента. Пятилетняя машина в Корее может иметь меньше пробега, чем годовая машина в Саудовской Аравии. Почему? Общественный транспорт здесь настолько удобный, что большинство почти не ездят на машине в будни — она просто стоит в гараже с понедельника до пятницы. Вот почему корейские б/у машины выглядят почти новыми даже спустя годы.»",
+  caption:"A 5-year-old Korean car can have less mileage than a 1-year-old Saudi car. Here's why. 🇰🇷",
+  pinned:"Guess the mileage on this one before I show you 👇"}
+];
+
 const IDEAS = [
  {n:1,w:1,p:"P4",m:"Voice",len:"20s",t:"Why I'm in Korea",d:"<b>Hook:</b> walking a massive lot, tracking shot — “Korea is my 7th country. I moved here at 20 — because of what I'm about to show you.” Flash of 7 countries → “this market sells everything — from a $6,000 Kia to a Rolls-Royce.” <b>CTA:</b> Follow."},
  {n:2,w:1,p:"P1",m:"Voice",len:"18s",t:"€52,000 Mercedes price shock",d:"<b>Hook:</b> “This Mercedes costs €52,000 in Germany.” Real Encar price reveal → landed math for one destination → “Now you know what your dealer knows.” <b>CTA:</b> comment your city."},
@@ -1050,6 +1088,29 @@ document.getElementById('scripts2').innerHTML =
    </div>
  </div>`).join('');
 
+document.getElementById('week3List').innerHTML = WEEK3_SCRIPTS.map((s,idx)=>`
+ <div class="script-card">
+   <div class="script-head">
+     <span class="day">${String(idx+1).padStart(2,'0')}</span>
+     <h4>${s.title}</h4>
+     ${pBadge(s.pillar)} ${mBadge(s.mode)} <span class="badge b-voice num">${s.len}</span>
+   </div>
+   <div class="script-body">
+     <p class="meta"><b>Script (EN)</b></p>
+     <p style="color:var(--text); line-height:1.65">${s.en}</p>
+     <p class="meta" style="margin-top:14px"><b>RU subtitle</b></p>
+     <p style="color:var(--muted); line-height:1.65">${s.ru}</p>
+     <div style="display:flex; gap:8px; margin:10px 0 14px">
+       <button class="copy-btn" data-copy="${s.en.replace(/"/g,'&quot;')}" aria-label="Copy English script">
+         <svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"/></svg>EN</button>
+       <button class="copy-btn" data-copy="${s.ru.replace(/"/g,'&quot;')}" aria-label="Copy Russian subtitle">
+         <svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"/></svg>RU</button>
+     </div>
+     <div class="cap"><b>Caption</b>${s.caption}</div>
+     <div class="cap"><b>Pinned comment</b>${s.pinned}</div>
+   </div>
+ </div>`).join('');
+
 function renderIdeas(f){
   const list = IDEAS.filter(i => f==='all' || i.p===f || i.m===f);
   let html='', lastW=0;
@@ -1130,7 +1191,7 @@ document.querySelectorAll('.checklist').forEach(ul=>{
 });
 
 /* routing */
-const PAGES=['overview','week1','week2','ideas','hooks','visualhooks','higgsfield','automation'];
+const PAGES=['overview','week1','week2','week3','ideas','hooks','visualhooks','higgsfield','automation'];
 function show(page){
   if(!PAGES.includes(page))page='overview';
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('visible'));
